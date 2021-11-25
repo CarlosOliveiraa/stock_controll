@@ -15,12 +15,21 @@ class CustomDrawer extends StatelessWidget {
             DrawerHeader(
               child: CustomDrawerHeader(),
               ),
-            Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-            DrawerTile(iconData: Icons.home, title: 'Início',),
-            Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-            DrawerTile(iconData: Icons.list, title: 'Inventário',),
-            Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-            DrawerTile(iconData: Icons.list_alt_sharp, title: 'Recebimento',),
+            DrawerTile(
+              iconData: Icons.home,
+               title: 'Início', 
+               page: 0,
+               ),
+            DrawerTile(
+              iconData: Icons.list,
+               title: 'Inventário',
+                page: 1,
+                ),
+            DrawerTile(
+              iconData: Icons.local_shipping_rounded,
+               title: 'Recebimento',
+                page: 2,
+                ),
           ],
         ),
     );
