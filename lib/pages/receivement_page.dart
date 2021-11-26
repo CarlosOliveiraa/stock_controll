@@ -11,6 +11,7 @@ class ReceivementPage extends StatelessWidget {
     return Scaffold(
       drawer: CustomDrawer(),
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           'Recebimento',
           style: TextStyle(
